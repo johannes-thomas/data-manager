@@ -1,0 +1,24 @@
+.main-footer {
+    color: transparent;
+}
+
+.main-footer > * {
+    color: rgb(152, 152, 152);
+}
+
+a[class="nav-link"][href^="/main/articletype/"],
+a[class="nav-link"][href^="/main/contract"],
+a[class="nav-link"][href^="/main/country"],
+a[class="nav-link"][href^="/main/currency"],
+a[class="nav-link"][href^="/main/discountlevel"],
+a[class="nav-link"][href^="/main/documenttype"],
+a[class="nav-link"][href^="/main/feescope"],
+a[class="nav-link"][href^="/main/institution"],
+a[class="nav-link"][href^="/main/journal"],
+a[class="nav-link"][href^="/main/licensetype"],
+a[class="nav-link"][href^="/main/limittype"],
+a[class="nav-link"][href^="/main/professionalsociety"],
+a[class="nav-link"][href^="/main/publisher"],
+a[class="nav-link"][href^="/main/subjectarea"] {
+    color: rgb(152, 152, 152) !important;
+}

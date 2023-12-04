@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{name}} List
+{% endblock %}
+{% block content %}
+    <h2>{{name}} List</h2>
+
+    {% if object_list %}
+        <table class="object_list">
+            <thead>
+                <tr>
+                    {% for data_key in data_keys %}
+                        <th>{{ data_key }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in object_list %}
+                    <tr>
+                        {% for row_item in row.values %}
+                            <td>{{ row_item }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No data.</p>
+    {% endif %}
+{% endblock %}
